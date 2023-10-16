@@ -10,5 +10,12 @@ body {
 h1 {
   font-size: 52px;
   text-align: center;
-  margin: 25px auto;
+  margin: 25px auto 50px;
+}
+
+.grid-container {
+  border: solid black 3px;
+  height: 600px;
+  width: 600px;
+  margin: auto;
 }
