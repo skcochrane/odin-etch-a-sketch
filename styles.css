@@ -15,7 +15,15 @@ h1 {
 
 .grid-container {
   border: solid black 3px;
+  display: flex;
+  flex-wrap: wrap;
   height: 600px;
   width: 600px;
   margin: auto;
+}
+
+.grid-square {
+  border: grey solid 1px;
+  height: 36.1px;
+  width: 36.1px;
 }
