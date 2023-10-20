@@ -6,6 +6,9 @@ function createGridSquares() {
   let squareSize = 450 / squaresPerSide - 1;
   gridSquare.style.height = squareSize + "px";
   gridSquare.style.width = squareSize + "px";
+  gridSquare.addEventListener("mouseover", function () {
+    gridSquare.classList.add("hover-square");
+  });
   gridContainer.appendChild(gridSquare);
 }
 
@@ -35,8 +38,6 @@ changeBtn.addEventListener("click", function () {
 
 let squaresPerSide = 16;
 gridContainer = createGrid(squaresPerSide);
-
-// CHANGE BACKGROUND COLOR OF GRID SQUARE UPON HOVER
 
 // RESET BUTTON
 
