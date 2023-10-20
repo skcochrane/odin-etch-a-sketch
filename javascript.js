@@ -21,8 +21,16 @@ changeBtn.addEventListener("click", function () {
     "Enter a whole number between 1 and 100 to change the number of squares per side of the grid: "
   );
   squaresPerSide = Number(promptResponse);
-  gridContainer.innerHTML = "";
-  gridContainer = createGrid(squaresPerSide);
+  if (
+    squaresPerSide > 100 ||
+    squaresPerSide < 1 ||
+    !Number.isInteger(squaresPerSide)
+  ) {
+    alert("Please try again. Must be a number between 1 and 100");
+  } else {
+    gridContainer.innerHTML = "";
+    gridContainer = createGrid(squaresPerSide);
+  }
 });
 
 let squaresPerSide = 16;
