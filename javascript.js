@@ -39,6 +39,8 @@ changeBtn.addEventListener("click", function () {
 let squaresPerSide = 16;
 gridContainer = createGrid(squaresPerSide);
 
+// ADD INSTRUCTION TEXT EXPLAINING TO MOVE MOUSE OVER SQUARES TO DRAW
+
 // RESET BUTTON
 
 //BONUS == DARKEN BY 10% EVER HOVER

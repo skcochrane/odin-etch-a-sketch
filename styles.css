@@ -12,7 +12,8 @@ button {
   background-color: #ededed;
   border: solid black 1px;
   border-radius: 15px;
-  padding: 10px;
+  font-size: 12;
+  padding: 5px 8px;
 }
 
 button:hover {
@@ -21,9 +22,15 @@ button:hover {
 }
 
 h1 {
-  font-size: 52px;
+  font-size: 48px;
   text-align: center;
-  margin: 25px auto 15px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .grid-container {
@@ -47,5 +54,5 @@ h1 {
 
 .menu {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
