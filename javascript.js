@@ -1,4 +1,4 @@
-const gridContainer = document.querySelector(".grid-container");
+let gridContainer = document.querySelector(".grid-container");
 
 function createGridSquares() {
   let gridSquare = document.createElement("div");
@@ -18,7 +18,7 @@ let createGrid = function (squaresPerSide) {
   }
 };
 
-const changeBtn = document.querySelector(".change-btn");
+let changeBtn = document.querySelector(".change-btn");
 changeBtn.addEventListener("click", function () {
   promptResponse = prompt(
     "Enter a whole number between 1 and 100 to change the number of squares per side of the grid: "
@@ -31,6 +31,7 @@ changeBtn.addEventListener("click", function () {
   ) {
     alert("Please try again. Must be a number between 1 and 100");
   } else {
+    gridContainer = document.querySelector(".grid-container");
     gridContainer.innerHTML = "";
     gridContainer = createGrid(squaresPerSide);
   }
@@ -39,8 +40,10 @@ changeBtn.addEventListener("click", function () {
 let squaresPerSide = 16;
 gridContainer = createGrid(squaresPerSide);
 
-// ADD INSTRUCTION TEXT EXPLAINING TO MOVE MOUSE OVER SQUARES TO DRAW
-
-// RESET BUTTON
-
-//BONUS == DARKEN BY 10% EVER HOVER
+let resetBtn = document.querySelector(".reset-btn");
+resetBtn.addEventListener("click", function () {
+  gridContainer = document.querySelector(".grid-container");
+  gridContainer.innerHTML = "";
+  squaresPerSide = 16;
+  gridContainer = createGrid(squaresPerSide);
+});
